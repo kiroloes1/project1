@@ -1,298 +1,339 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!-- <meta http-equiv="refresh" content="2"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Ecommerce.css">
-    <link rel="icon" href="./pic/output (2).jpg">
-    <title>Ecommerce</title>
+
+    <title>EduPlatform </title>
+
+    <!-- Meta Description for SEO -->
+    <meta name="description" content="EduPlatform is an interactive online learning platform offering courses, quizzes, and certifications in various fields like programming, design, business, and more.">
+    <meta name="author" content="Kiroloes Reda Wassef">
+    <meta name="keywords" content="online learning, e-learning platform, education, programming courses, design courses, certifications, quizzes, study online, interactive learning">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph Meta Tags (for Facebook, LinkedIn, etc.) -->
+    <meta property="og:title" content="EduPlatform | Learn Anytime, Anywhere">
+    <meta property="og:description" content="Join EduPlatform and access expert-led courses, interactive quizzes, and earn certificates to boost your career.">
+    <meta property="og:image" content="https://yourdomain.com/images/edu-og-image.jpg"> <!-- Replace with your actual image -->
+    <meta property="og:url" content="https://yourdomain.com">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="EduPlatform | Learn Anytime, Anywhere">
+    <meta name="twitter:description" content="Join EduPlatform and access expert-led courses, interactive quizzes, and earn certificates to boost your career.">
+    <meta name="twitter:image" content="https://yourdomain.com/images/edu-og-image.jpg"> <!-- Replace with your actual image -->
+
+    <!-- Favicon -->
+    <link rel="icon" href="./pic/logoo.png">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+
+
 </head>
+
 <body>
-    <header>
-        <nav class="divided">
-            
-               
-                    <div>
-                        <ul>
-                            <li><a href="cart.html"><img class="z" src ="./pic/Screenshot 2024-12-05 022728.png" alt=""></a></li>
-                            <li><a href="index.html"><img class="z" src="./pic/ic.png" alt=""></a></li>
-                        </ul>
-                       
-                    </div>
-                  
-                    <div>
-                        <ul>
-                            <li><a href="login.html"><button><img class="c" src="./pic/Screenshot 2024-12-05 021222.png" alt="">login </button></a></li>
-                            <li><a href="sign-uo.html"><button><img class="c" src="./pic/Screenshot 2024-12-05 020852.png" alt="">sign up </button></a></li>
-                        </ul>
- 
-            </div>
-        </nav>
-        <div class="body-header">
-            <h1 class="head1">
-                lifestyle collection
-            </h1>
-
-            <h1 class="head2">
-                SALE UP TO <span>30% OFF</span>
-            </h1>
-
-            <h2 class="head3">
-                Get Free Shipping on order over $99.00
-            </h2>
-<div class="display">
-    <button class="button-shop" onclick="window.location='#main'">Shop Now</button>
-</div>
-          
-        </div>
-
-    </header>
-
-    <div class="header-main">
-        <h1 class="h1">&#10003; Recommended by</h1>
+<!-- Login/Signup Popup -->
+<div class="auth-popup" id="authPopup">
+  <div class="popup-content">
+    <span class="close-btn">&times;</span>
+    <div class="auth-forms">
+      <!-- Login Form -->
+      <div class="login-form active">
+        <h2>Login</h2>
+        <form id="loginForm">
+          <input type="email" placeholder="Email" required>
+          <input type="password" placeholder="Password" required>
+          <button type="submit">Login</button>
+        </form>
+        <p class="switch-form">Don't have an account? <a href="#" class="show-signup">Sign up</a></p>
+      </div>
+      
+      <!-- Signup Form -->
+      <div class="signup-form">
+        <h2>Create Account</h2>
+        <form id="signupForm">
+          <input type="text" placeholder="Full Name" required>
+          <input type="email" placeholder="Email" required>
+          <input type="password" placeholder="Password" required>
+          <input type="password" placeholder="Confirm Password" required>
+          <button type="submit">Sign Up</button>
+        </form>
+        <p class="switch-form">Already have an account? <a href="#" class="show-login">Log in</a></p>
+      </div>
     </div>
+  </div>
+</div>
     
-    <main id="main">
-        
-        <article>
-            <img src="./pic/short.png" alt="">
-            <div class="div">
-            <h1>project title</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus voluptatem rerum reprehenderit aspernatur optio sint libero repellat doloremque minus expedita adipisci quae quia numquam, culpa, ratione corporis, qui vel quo.</p>
-            <div class="flooter">
+      <header>
+     
+        <nav>
+             <!--logo  -->
+             <img src="./pic/logoo.png" alt="logo">
 
-        
-            <div class="price">150$</div>
-            <button><img src="./pic/Screenshot 2024-12-05 022728.png" alt="">add to cart</button>
+             <!--search  -->
+             <div class="search">
+                  <input type="search" placeholder="search about your lesson">
+                <i class="fa-solid fa-magnifying-glass"></i>
+             </div>
+           
+
+             <!-- registration -->
+              <ul>
+                <li><a class="login" href="#">Login</a></li>
+                <li class="signup2"><a class="signup" href="#">SignUP</a></li>
+              </ul>
+        </nav>
+      </header>
+
+      <main>
+        <section class="main-section">
+            <h1>
+               <span>Physics </span> Society
+            </h1>
+            <hr>
+            <div>
+                <h2>
+                   A platform that will make
+                    you love and excel in physics. 
+                    <span>
+                        with/ EduPlatform  
+                    </span>
+                </h2>
+                <div class="main-navigation">
+                    <a  href="#" class="main-left-button">join to we</a>
+                    <a  href="#" class="main-right-button">Oerder your book </a>
+                </div>
+            </div>
+        </section>
+
+              <div class="skip">
+            <h2 class="heading-arrow">EduPlatform | Learn Anytime, Anywhere</h2>
+                <span class="arrow"></span>
+                <span class="arrow"></span>
+                <span class="arrow"></span>
         </div>
-        </div>
-
-        </article>
-        <article>
-            <img src="./pic/2.webp" alt="">
-            <div class="div">
-            <h1>project title</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus voluptatem rerum reprehenderit aspernatur optio sint libero repellat doloremque minus expedita adipisci quae quia numquam, culpa, ratione corporis, qui vel quo.</p>
-            <div class="flooter">
-
-        
-            <div class="price">100$</div>
-            <button><img src="./pic/Screenshot 2024-12-05 022728.png" alt="">add to cart</button>
-        </div>
-        </div>
-
-        </article>
-
-
-
-        <article>
-            <img src="./pic/3.webp" alt="">
-            <div class="div">
-            <h1>project title</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus voluptatem rerum reprehenderit aspernatur optio sint libero repellat doloremque minus expedita adipisci quae quia numquam, culpa, ratione corporis, qui vel quo.</p>
-            <div class="flooter">
-
-        
-            <div class="price">120$</div>
-            <button><img src="./pic/Screenshot 2024-12-05 022728.png" alt="">add to cart</button>
-        </div>
-        </div>
-
-        </article>
-
-
-        <article>
-            <img src="./pic/4.webp" alt="">
-            <div class="div">
-            <h1>project title</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus voluptatem rerum reprehenderit aspernatur optio sint libero repellat doloremque minus expedita adipisci quae quia numquam, culpa, ratione corporis, qui vel quo.</p>
-            <div class="flooter">
 
         
-            <div class="price">1000$</div>
-            <button><img src="./pic/Screenshot 2024-12-05 022728.png" alt="">add to cart</button>
+         <section class="who-we-are">
+                <div class="logo">
+                    <img src="./pic/logoo.png" alt="logo">
+                    <img src="./pic/logoo.png" alt="logo">
+                </div>
+                <h2>Who Are We?</h2>
+                <p>
+                    We are a passionate educational platform dedicated to making physics enjoyable, accessible, and understandable for every student. Our mission is to simplify complex scientific concepts through interactive content, visual explanations, and practical applications — turning fear into curiosity and confusion into clarity.
+                </p>
+                <div>
+                      <a href="#">Subscribe now</a>
+                </div>
+                   <div class="logo">
+                    <img src="./pic/logoo.png" alt="logo">
+                    <img src="./pic/logoo.png" alt="logo">
+                </div>
+               
+   
+        </section>
+
+        <div class="skip">
+            <h2 class="heading-arrow">EduPlatform | Learn Anytime, Anywhere</h2>
+                <span class="arrow"></span>
+                <span class="arrow"></span>
+                <span class="arrow"></span>
+        </div>
+
+    <section class="trust-section">
+        <h3>Why Students Trust Us</h3>
+        <div  class="trust-items">
+    <div class="itemOne">
+        <p>Explaining and solving <span>multiple methods</span></p>
+    </div>
+    <div class="itemTwo">
+        <p>Trusted by <span>+1,000,000</span> students</p>
+    </div>
+    <div class="itemThree">
+        <p>We are always <span>here to support you</span></p>
+    </div>
+    </div>
+</section>
+
+      <div class="skip">
+            <h2 class="heading-arrow">EduPlatform | Learn Anytime, Anywhere</h2>
+                <span class="arrow"></span>
+                <span class="arrow"></span>
+                <span class="arrow"></span>
+        </div>
+
+<section class="gategory">
+    <h2>gategory</h2>
+    <div class="container">
+        <div class="card">
+            <img src="https://mahmoud-magdy.com/static/media/year3.4c4d455fa6551d831e58.png" alt="">
+        <div class="content">
+
+            <h3>
+               The third year of secondary
+            </h3>
+            <hr>
+            <p>
+               All courses for The third year of secondary school
+            </p>
         </div>
         </div>
 
-        </article>
+        <div class="card">
+            <img src="https://mahmoud-magdy.com/static/media/year2.2b99157b74d5b714af40.png" alt="">
+        <div class="content">
+            <h3>
+              The second year of secondary
+            </h3>
+            <hr>
+            <p>
+             All courses for The second year of secondary school
+            </p>
+        </div>
+        </div>
+    </div>
+</section>
 
 
+      <div class="skip">
+            <h2 class="heading-arrow">EduPlatform | Learn Anytime, Anywhere</h2>
+                <span class="arrow"></span>
+                <span class="arrow"></span>
+                <span class="arrow"></span>
+        </div>
+
+        <section class="Book">
+             <h2>your Book</h2>
+    <div class="container">
+        <div class="card">
+            <img src="https://mahmoud-magdy.com/static/media/year3.4c4d455fa6551d831e58.png" alt="">
+        <div class="content">
+
+            <h3>
+               The third year of secondary's book
+            </h3>
+            <hr>
+            <p>
+               All book for The third year of secondary school
+            </p>
+        </div>
+        </div>
 
 
-        <article>
-          <img src="./pic/5.webp" alt="">
-            <div class="div">
-            <h1>project title</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus voluptatem rerum reprehenderit aspernatur optio sint libero repellat doloremque minus expedita adipisci quae quia numquam, culpa, ratione corporis, qui vel quo.</p>
-            <div class="flooter">
+        <div class="card">
+                    <img src="https://mahmoud-magdy.com/static/media/year2.2b99157b74d5b714af40.png" alt="">
 
+        <div class="content">
+            <h3>
+              The second year of secondary's book
+            </h3>
+            <hr>
+            <p>
+             All courses for The second year of secondary school
+            </p>
+        </div>
+        </div>
+    </div>
+        </section>
+
+      <div class="skip">
+            <h2 class="heading-arrow">EduPlatform | Learn Anytime, Anywhere</h2>
+                <span class="arrow"></span>
+                <span class="arrow"></span>
+                <span class="arrow"></span>
+        </div>
+
+      </main>
+
+      <footer>
+        <div class="container">
+        <div class="social-media">
+            <div class="font">
+                    <i data-aos="fade-up" class="fa-brands fa-facebook"></i>
+                    <i data-aos="fade-up" class="fa-brands fa-whatsapp"></i>
+                    <i data-aos="fade-up" class="fa-brands fa-instagram"></i>
+                    </div>
+        </div>
+        <hr>
         
-            <div class="price">200$</div>
-            <button><img src="./pic/Screenshot 2024-12-05 022728.png" alt="">add to cart</button>
+           <h5>&copy; 2025 Kiroloes Reda. All rights reserved.</h5>
         </div>
-        </div>
+      </footer>
 
-        </article>
-
-
-
-        <article>
-            <img src="./pic/6.webp" alt="">
-            <div class="div">
-            <h1>project title</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus voluptatem rerum reprehenderit aspernatur optio sint libero repellat doloremque minus expedita adipisci quae quia numquam, culpa, ratione corporis, qui vel quo.</p>
-            <div class="flooter">
-
-        
-            <div class="price">800$</div>
-            <button><img src="./pic/Screenshot 2024-12-05 022728.png" alt="">add to cart</button>
-        </div>
-        </div>
-
-        </article>
-
-
-        <article>
-           <img src="./pic/7.webp" alt="">
-            <div class="div">
-            <h1>project title</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus voluptatem rerum reprehenderit aspernatur optio sint libero repellat doloremque minus expedita adipisci quae quia numquam, culpa, ratione corporis, qui vel quo.</p>
-            <div class="flooter">
-
-        
-            <div class="price">400$</div>
-            <button><img src="./pic/Screenshot 2024-12-05 022728.png" alt="">add to cart</button>
-        </div>
-        </div>
-
-        </article>
-
-        
-        <article>
-            <img src="./pic/Apple_Watch_Series_9_GPS_45mm_Starlight.webp" alt="">
-            <div class="div">
-            <h1>project title</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus voluptatem rerum reprehenderit aspernatur optio sint libero repellat doloremque minus expedita adipisci quae quia numquam, culpa, ratione corporis, qui vel quo.</p>
-            <div class="flooter">
-
-        
-            <div class="price">550$</div>
-            <button><img src="./pic/Screenshot 2024-12-05 022728.png" alt="">add to cart</button>
-        </div>
-        </div>
-
-        </article>
-
-        <article>
-            <img src="./pic/cards holder.webp" alt="">
-            <div class="div">
-            <h1>project title</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus voluptatem rerum reprehenderit aspernatur optio sint libero repellat doloremque minus expedita adipisci quae quia numquam, culpa, ratione corporis, qui vel quo.</p>
-            <div class="flooter">
-
-        
-            <div class="price">200$</div>
-            <button><img src="./pic/Screenshot 2024-12-05 022728.png" alt="">add to cart</button>
-        </div>
-        </div>
-
-        </article>
-        <article>
-            <img src="./pic/cards holder.webp" alt="">
-            <div class="div">
-            <h1>project title</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus voluptatem rerum reprehenderit aspernatur optio sint libero repellat doloremque minus expedita adipisci quae quia numquam, culpa, ratione corporis, qui vel quo.</p>
-            <div class="flooter">
-
-        
-            <div class="price">200$</div>
-            <button><img src="./pic/Screenshot 2024-12-05 022728.png" alt="">add to cart</button>
-        </div>
-        </div>
-
-        </article>
-        <article>
-            <img src="./pic/cards holder.webp" alt="">
-            <div class="div">
-            <h1>project title</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus voluptatem rerum reprehenderit aspernatur optio sint libero repellat doloremque minus expedita adipisci quae quia numquam, culpa, ratione corporis, qui vel quo.</p>
-            <div class="flooter">
-
-        
-            <div class="price">200$</div>
-            <button><img src="./pic/Screenshot 2024-12-05 022728.png" alt="">add to cart</button>
-        </div>
-        </div>
-
-        </article>
-        <article>
-            <img src="./pic/cards holder.webp" alt="">
-            <div class="div">
-            <h1>project title</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus voluptatem rerum reprehenderit aspernatur optio sint libero repellat doloremque minus expedita adipisci quae quia numquam, culpa, ratione corporis, qui vel quo.</p>
-            <div class="flooter">
-
-        
-            <div class="price">200$</div>
-            <button><img src="./pic/Screenshot 2024-12-05 022728.png" alt="">add to cart</button>
-        </div>
-        </div>
-
-        </article>
-        <article>
-            <img src="./pic/cards holder.webp" alt="">
-            <div class="div">
-            <h1>project title</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus voluptatem rerum reprehenderit aspernatur optio sint libero repellat doloremque minus expedita adipisci quae quia numquam, culpa, ratione corporis, qui vel quo.</p>
-            <div class="flooter">
-
-        
-            <div class="price">200$</div>
-            <button><img src="./pic/Screenshot 2024-12-05 022728.png" alt="">add to cart</button>
-        </div>
-        </div>
-
-        </article>
-        <article>
-            <img src="./pic/cards holder.webp" alt="">
-            <div class="div">
-            <h1>project title</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus voluptatem rerum reprehenderit aspernatur optio sint libero repellat doloremque minus expedita adipisci quae quia numquam, culpa, ratione corporis, qui vel quo.</p>
-            <div class="flooter">
-
-        
-            <div class="price">200$</div>
-            <button><img src="./pic/Screenshot 2024-12-05 022728.png" alt="">add to cart</button>
-        </div>
-        </div>
-
-        </article>
-        <article>
-            <img src="./pic/cards holder.webp" alt="">
-            <div class="div">
-            <h1>project title</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus voluptatem rerum reprehenderit aspernatur optio sint libero repellat doloremque minus expedita adipisci quae quia numquam, culpa, ratione corporis, qui vel quo.</p>
-            <div class="flooter">
-
-        
-            <div class="price">200$</div>
-            <button><img src="./pic/Screenshot 2024-12-05 022728.png" alt="">add to cart</button>
-        </div>
-        </div>
-
-        </article>
-
-        
-    </main>
-    <footer>
-        <div class="footer-content">
-            
-                <h3>Contact Information</h3>
-                <p>Phone: +123456789</p>
-                <p>Email: contact@example.com</p>
-                <p>Address: Example Street, City, Country</p>
-          
-    </footer>
+      <script>
+document.addEventListener('DOMContentLoaded', function() {
+  // DOM Elements
+  const authPopup = document.getElementById('authPopup');
+  const closeBtn = document.querySelector('.close-btn');
+  const loginLink = document.querySelector('.login');
+  const signupLink = document.querySelector('.signup');
+  const showLogin = document.querySelector('.show-login');
+  const showSignup = document.querySelector('.show-signup');
+  const loginForm = document.querySelector('.login-form');
+  const signupForm = document.querySelector('.signup-form');
+  
+  // Open popup when clicking login
+  loginLink.addEventListener('click', function(e) {
+    e.preventDefault();
+    authPopup.style.display = 'flex';
+    loginForm.classList.add('active');
+    signupForm.classList.remove('active');
+  });
+  
+  // Open popup when clicking signup
+  signupLink.addEventListener('click', function(e) {
+    e.preventDefault();
+    authPopup.style.display = 'flex';
+    signupForm.classList.add('active');
+    loginForm.classList.remove('active');
+  });
+  
+  // Close popup
+  closeBtn.addEventListener('click', function() {
+    authPopup.style.display = 'none';
+  });
+  
+  // Close when clicking outside
+  authPopup.addEventListener('click', function(e) {
+    if (e.target === authPopup) {
+      authPopup.style.display = 'none';
+    }
+  });
+  
+  // Switch between forms
+  showSignup.addEventListener('click', function(e) {
+    e.preventDefault();
+    loginForm.classList.remove('active');
+    signupForm.classList.add('active');
+  });
+  
+  showLogin.addEventListener('click', function(e) {
+    e.preventDefault();
+    signupForm.classList.remove('active');
+    loginForm.classList.add('active');
+  });
+  
+  // Form submission (modify as needed)
+  document.getElementById('loginForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert('Logged in successfully!');
+    authPopup.style.display = 'none';
+  });
+  
+  document.getElementById('signupForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert('Account created successfully!');
+    authPopup.style.display = 'none';
+  });
+});
+</script>
 </body>
 </html>
